@@ -1,0 +1,10 @@
+/node_modules
+/twentynineteen
+/twentyseventeen
+/twentytwenty
+/html5blank-stable
+/index.php
+.sass-cache/*
+sau/style.css.map
+.DS_Store
+sandalyn.zip
