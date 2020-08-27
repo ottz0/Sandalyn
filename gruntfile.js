@@ -80,7 +80,7 @@ grunt.initConfig({
                 sourcemap:false
             },
             files: {                         
-                'sau/style.css': 'scss/main.scss',
+                'sandalyn/style.css': 'scss/main.scss',
             }
         },
         // dist: {                            
