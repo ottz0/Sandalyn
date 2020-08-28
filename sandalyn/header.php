@@ -22,8 +22,7 @@
 
 <body>
 <?php wp_body_open(); ?>
-
-<div class="sau-c-hero sau-c-hero__page">
+<div class="sand-c-hero sand-c-hero__page">
     <div class="container">
         <!-- Main Page Wrapper -->
         <div class="columns pt-30">

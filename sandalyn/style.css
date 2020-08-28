@@ -9839,6 +9839,37 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
+body {
+  display: flex;
+  min-height: 97vh;
+  flex-direction: column;
+}
+
+.sand-c-hero {
+  background-color: #ffffff;
+  /* Used if the image is unavailable */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  flex: 1;
+}
+.sand-c-hero .sand-c-hero__inner {
+  padding-top: 50px;
+}
+.sand-c-hero.sand-c-hero__main {
+  min-height: 950px;
+  /* You must set a specified height */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-image: url("https://go.serversaustralia.com.au/l/797243/2020-08-14/21vyt/797243/37524/hero_bg.gif");
+  /* The image used */
+}
+.sand-c-hero.sand-c-hero__page {
+  background-image: url("https://go.serversaustralia.com.au/l/797243/2020-08-17/227wm/797243/37706/hero_bg_page.gif");
+  /* The image used */
+}
+
 .sand-c-content-breaker {
   border-top: 2px solid #F0F0F0;
   border-bottom: 2px solid #F0F0F0;
@@ -9851,6 +9882,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 .sand-c-content-breaker.md {
   padding: 25px;
+}
+
+.sand-u-font__color--facebook {
+  color: #3b5998 !important;
+}
+
+.sand-u-font__color--black {
+  color: #000 !important;
 }
 
 .mt-0 {

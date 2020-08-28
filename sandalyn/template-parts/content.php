@@ -30,7 +30,7 @@
         </div>
         <!-- Right side -->
         <div class="level-right">
-            <p class="level-item"><a href="https://www.facebook.com/Sandalyn-Estate-Hunter-Valley-501186410731241" target="_blank"><i class="fab fa-facebook-square fa-2x sau-u-font__color--facebook"></i></a></p>
+            <p class="level-item"><a href="https://www.facebook.com/Sandalyn-Estate-Hunter-Valley-501186410731241" target="_blank"><i class="fab fa-facebook-square fa-2x sand-u-font__color--black"></i></a></p>
         </div>
     </nav>
 </header><!-- .entry-header -->
@@ -87,7 +87,7 @@
         </div>
         <!-- Right side -->
         <div class="level-right">
-            <p class="level-item"><a href="https://www.facebook.com/Sandalyn-Estate-Hunter-Valley-501186410731241" target="_blank"><i class="fab fa-facebook-square fa-2x sau-u-font__color--facebook"></i></a></p>
+            <p class="level-item"><a href="https://www.facebook.com/Sandalyn-Estate-Hunter-Valley-501186410731241" target="_blank"><i class="fab fa-facebook-square fa-2x sand-u-font__color--black"></i></a></p>
         </div>
     </nav>
     <!-- /Post Info -->     
