@@ -9,7 +9,7 @@
     <!-- Header -->
     <div class="pt-10 pb-20"><?php the_title( '<h1 class="title is-2 has-text-weight-semibold">', '</h1>' ); ?></div>
     <!-- Article Nav -->
-    <nav class="level sand-c-content-breaker sm mb-30">
+    <nav class="level sand-c-content-breaker sm mb-30 is-hidden-mobile">
         <!-- Left side -->
         <div class="level-left">
             <div class="level-item">

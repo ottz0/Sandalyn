@@ -16,7 +16,7 @@
     <footer>
         <div class="columns px-10">
             <div class="column has-text-centered">
-                <p>&copy; 2020 Servers Australia<sup>&reg;</sup>. All Rights Reserved. ABN: 98 125 037 443 | <a href="https://www.serversaustralia.com.au/about-us/legal" target="_blank">Privacy Policy</a></p>
+                <p>&copy; <?php echo date("Y"); ?> Sandalyn Estate, Hunter Valley, NSW Australia. Hunter Valley Accommodation, Weddings &amp; Events | <a href="#" target="_blank">Privacy Policy</a></p>
             </div>
         </div>
     </footer>

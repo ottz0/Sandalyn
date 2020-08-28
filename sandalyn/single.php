@@ -9,6 +9,7 @@
 
 get_header();
 ?>
+<section class="section">
     <main class="container">
         <!-- Main Page Wrapper -->
         <div class="columns">
@@ -21,16 +22,26 @@ get_header();
                         <?php
                             while ( have_posts() ) :
                                 the_post();
-
                                 get_template_part( 'template-parts/content', get_post_type() );
-
-                                the_post_navigation(
-                                    array(
-                                        'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'sandalyn' ) . '</span> <span class="nav-title">%title</span>',
-                                        'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'sandalyn' ) . '</span> <span class="nav-title">%title</span>',
-                                    )
-                                );
-
+                                ?>
+                                    <!-- Next / Prev post -->
+                                    <nav class="level">
+                                        <!-- Left side -->
+                                        <div class="level-left">
+                                            <div class="level-item">
+                                                <a href="<?php echo get_permalink($prev_id); ?>" class="has-text-weight-medium"><i class="fas fa-chevron-left"></i> Previous post</a>
+                                            </div>
+                                        </div>
+                                        <!-- Right side -->
+                                        <div class="level-right">
+                                            <div class="level-item">
+                                                <div class="buttons">
+                                                    <a href="<?php echo get_permalink($next_id); ?>" class="has-text-weight-medium">Next post <i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                <?php
                                 // If comments are open or we have at least one comment, load up the comment template.
                                 if ( comments_open() || get_comments_number() ) :
                                     comments_template();
@@ -43,5 +54,6 @@ get_header();
         </div>
         <!-- /Main Page Wrapper -->
     </main>
+</section>
 <?php
 get_footer();

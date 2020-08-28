@@ -29,32 +29,20 @@
         <div class="columns pt-30">
             <div class="column">
                 <!-- Mobile Nav -->
-                <nav class="is-hidden-desktop">
-                    <div class="columns is-centered">
-                        <div class="column has-text-centered">
-                            <a href="#!" data-qualified-action="open" class="mx-3"><span class="icon is-small mr-2"><i class="fas fa-headset"></i></span>Live Chat</a>
-                            <a href="tel:1300788862" class="mx-3"><span class="icon is-small mr-2"><i class="fas fa-phone"></i></span>1300 788 862</a>
-                        </div>
-                    </div>
-                    <div class="columns has-margin-top-minus-40">
-                        <div class="column has-text-centered">
-                            <a href="https://www.serversaustralia.com.au/resources/blog">
-                                <img src="https://go.serversaustralia.com.au/l/797243/2020-08-13/21s3m/797243/37436/sau_brandmark_horizontal_blue.svg" width="280">
+                <nav class="level">
+                    <!-- Left side -->
+                    <div class="level-left">
+                        <div class="level-item">
+                            <a href="/">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/sandalyn-logo.gif" alt="Sandalyn logo">
                             </a>
                         </div>
                     </div>
-                </nav>
-                <!-- Desktop Nav -->
-                <nav class="navbar is-hidden-touch" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <a href="/">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/sandalyn-logo.gif" alt="Sandalyn logo">
-                        </a>
-                    </div>
-                    <div class="navbar-end">
-                        <div class="navbar-item mrn-10">
+                    <!-- Right side -->
+                    <div class="level-right">
+                        <div class="level-item">
                             <div class="buttons">
-                                <a href="tel:1300788862" class="button is-black is-default">
+                                <a href="https://apac.littlehotelier.com/properties/sandalynestatedirect" target="_blank" class="button is-black is-default">
                                 <span class="icon is-small mr-2">
                                 <i class="fas fa-calendar"></i>
                                 </span>
