@@ -1,0 +1,14 @@
+
+.sand-c-content-breaker{
+    &.sand-c-content-breaker--bg{
+        background-color:#F3F3F3;
+    }
+    &.sm{
+        padding:15px 0 15px 0; 
+    }
+    &.md {
+        padding:25px;
+    }
+    border-top:2px solid #F0F0F0;
+    border-bottom:2px solid #F0F0F0;
+}

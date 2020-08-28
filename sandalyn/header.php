@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package sandalyn
+ * @package sau
  */
 
 ?>
@@ -14,46 +14,56 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+    <script src="https://kit.fontawesome.com/0d98143560.js" crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'sandalyn' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$sandalyn_description = get_bloginfo( 'description', 'display' );
-			if ( $sandalyn_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $sandalyn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sandalyn' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+<div class="sau-c-hero sau-c-hero__page">
+    <div class="container">
+        <!-- Main Page Wrapper -->
+        <div class="columns pt-30">
+            <div class="column">
+                <!-- Mobile Nav -->
+                <nav class="is-hidden-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <a href="#!" data-qualified-action="open" class="mx-3"><span class="icon is-small mr-2"><i class="fas fa-headset"></i></span>Live Chat</a>
+                            <a href="tel:1300788862" class="mx-3"><span class="icon is-small mr-2"><i class="fas fa-phone"></i></span>1300 788 862</a>
+                        </div>
+                    </div>
+                    <div class="columns has-margin-top-minus-40">
+                        <div class="column has-text-centered">
+                            <a href="https://www.serversaustralia.com.au/resources/blog">
+                                <img src="https://go.serversaustralia.com.au/l/797243/2020-08-13/21s3m/797243/37436/sau_brandmark_horizontal_blue.svg" width="280">
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Desktop Nav -->
+                <nav class="navbar is-hidden-touch" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a href="/">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/sandalyn-logo.gif" alt="Sandalyn logo">
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item mrn-10">
+                            <div class="buttons">
+                                <a href="tel:1300788862" class="button is-black is-default">
+                                <span class="icon is-small mr-2">
+                                <i class="fas fa-calendar"></i>
+                                </span>
+                                RESERVATION</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- /Main Page Wrapper -->
+    </div>

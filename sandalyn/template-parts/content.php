@@ -1,63 +1,94 @@
+<header id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php
+    if ( 'post' === get_post_type() ) :
+        ?>
+        <!-- Post Info -->
+        <p class="has-text-weight-normal">Published <?php sandalyn_posted_by(); ?></p>
+        <!-- /Post Info -->     
+    <?php endif; ?>
+    <!-- Header -->
+    <div class="pt-10 pb-20"><?php the_title( '<h1 class="title is-2 has-text-weight-semibold">', '</h1>' ); ?></div>
+    <!-- Article Nav -->
+    <nav class="level sand-c-content-breaker sm mb-30">
+        <!-- Left side -->
+        <div class="level-left">
+            <div class="level-item">
+                <p><i class="fas fa-calendar pr-1"></i> <?php echo get_the_date('F j, Y') ?></p>
+            </div>
+            <?php
+            if ( is_user_logged_in() ) { ?>
+                <div class="level-item">
+                    <p><i class="fas fa-comment-alt pr-1"></i> <a href="#comment">Leave a comment</a></p>
+                </div>
+            <?php } else { ?>
+                <p><i class="fas fa-comment-alt pr-1"></i> <a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>">Leave a comment</a></p>
+            <?php }
+            ?>
+            <div class="level-item">
+                <?php edit_post_link('Edit', '<p><i class="fas fa-pencil pr-1"></i>', '</p>'); ?>
+            </div>
+        </div>
+        <!-- Right side -->
+        <div class="level-right">
+            <p class="level-item"><a href="https://www.facebook.com/Sandalyn-Estate-Hunter-Valley-501186410731241" target="_blank"><i class="fab fa-facebook-square fa-2x sau-u-font__color--facebook"></i></a></p>
+        </div>
+    </nav>
+</header><!-- .entry-header -->
+<?php sandalyn_post_thumbnail(); ?>
+<div class="content pt-30">
+    <?php
+    the_content(
+        sprintf(
+            wp_kses(
+                /* translators: %s: Name of current post. Only visible to screen readers */
+                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'sandalyn' ),
+                array(
+                    'span' => array(
+                        'class' => array(),
+                    ),
+                )
+            ),
+            wp_kses_post( get_the_title() )
+        )
+    );
+
+    wp_link_pages(
+        array(
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sandalyn' ),
+            'after'  => '</div>',
+        )
+    );
+    ?>
+</div><!-- .entry-content -->
 <?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package sandalyn
- */
+    if ( 'post' === get_post_type() ) :
+    ?>
+    <!-- Post Info -->
 
-?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				sandalyn_posted_on();
-				sandalyn_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php sandalyn_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'sandalyn' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'sandalyn' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php sandalyn_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+    <!-- Article Nav -->
+    <nav class="level sand-c-content-breaker sm mb-10">
+        <!-- Left side -->
+        <div class="level-left">
+            <div class="level-item">
+                <p><i class="fas fa-calendar pr-1"></i> <?php echo get_the_date('F j, Y') ?></p>
+            </div>
+            <?php
+            if ( is_user_logged_in() ) { ?>
+                <div class="level-item">
+                    <p><i class="fas fa-comment-alt pr-1"></i> <a href="#comment">Leave a comment</a></p>
+                </div>
+            <?php } else { ?>
+                <p><i class="fas fa-comment-alt pr-1"></i> <a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>">Leave a comment</a></p>
+            <?php }
+            ?>
+            <div class="level-item">
+                <?php edit_post_link('Edit', '<p><i class="fas fa-pencil pr-1"></i>', '</p>'); ?>
+            </div>
+        </div>
+        <!-- Right side -->
+        <div class="level-right">
+            <p class="level-item"><a href="https://www.facebook.com/Sandalyn-Estate-Hunter-Valley-501186410731241" target="_blank"><i class="fab fa-facebook-square fa-2x sau-u-font__color--facebook"></i></a></p>
+        </div>
+    </nav>
+    <!-- /Post Info -->     
+<?php endif; ?>

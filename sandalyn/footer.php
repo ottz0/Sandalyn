@@ -6,29 +6,20 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package sandalyn
+ * @package sau
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sandalyn' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'sandalyn' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sandalyn' ), 'sandalyn', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
+    </div><!-- / hero -->
+    <hr />
+    <!-- Footer -->
+    <footer>
+        <div class="columns px-10">
+            <div class="column has-text-centered">
+                <p>&copy; 2020 Servers Australia<sup>&reg;</sup>. All Rights Reserved. ABN: 98 125 037 443 | <a href="https://www.serversaustralia.com.au/about-us/legal" target="_blank">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    <?php wp_footer(); ?>
 </body>
 </html>
