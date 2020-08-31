@@ -22,7 +22,8 @@
 
 <body>
 <?php wp_body_open(); ?>
-<div class="sand-c-hero sand-c-hero__page">
+<div class="sand-c-hero sand-c-hero__page" style="max-height:30px; width:100%;">&nbsp;</div>
+<div>
     <div class="container">
         <!-- Main Page Wrapper -->
         <div class="columns pt-30">

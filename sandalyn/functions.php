@@ -183,3 +183,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/*------------------------------------*\
+	Sandalyn Custom Functions
+\*------------------------------------*/
+add_theme_support( 'editor-color-palette' );
+add_theme_support( 'disable-custom-colors' );
+add_theme_support( 'editor-font-sizes' );
+add_theme_support( 'disable-custom-font-sizes' );
+
+
+
+add_filter( 'excerpt_more', function() {
+    return '...';
+} );
+
+
+add_filter( 'excerpt_length', function($length) {
+    return 15;
+} );
+

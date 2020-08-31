@@ -16,7 +16,7 @@
     <footer>
         <div class="columns px-10">
             <div class="column has-text-centered">
-                <p>&copy; <?php echo date("Y"); ?> Sandalyn Estate, Hunter Valley, NSW Australia. Hunter Valley Accommodation, Weddings &amp; Events | <a href="#" target="_blank">Privacy Policy</a></p>
+                <p>&copy; <?php echo date("Y"); ?> Sandalyn Estate Accommodation, Weddings &amp; Events, Hunter Valley, NSW Australia. | <a href="#" target="_blank">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
