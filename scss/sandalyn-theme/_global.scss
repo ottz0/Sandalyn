@@ -8,7 +8,6 @@ body {
     background-color: #ffffff; /* Used if the image is unavailable */
     background-repeat: repeat-x; /* Do not repeat the image */
     flex:1;
-    height:100%;
     .sand-c-hero__inner{
         padding-top:50px;
     }
@@ -17,13 +16,13 @@ body {
         min-height: 950px; /* You must set a specified height */
         background-size: cover; /* Resize the background image to cover the entire container */
         background-position: center; /* Center the image */
-        background-image: url("../../img/bg-flourish.gif"); /* The image used */
     }
-    &.sand-c-hero__page{
-        background-image: url("img/bg-flourish.gif"); /* The image used */
-        height:50px;
-        //background-color:green;
-    }
+}
+
+.sand-top-strip{
+    max-height:30px; 
+    width:100%; 
+    background-image: url("img/bg-flourish.gif"); /* The image used */
 }
 .sand-c-content-breaker{
     &.sand-c-content-breaker--bg{
