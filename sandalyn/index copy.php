@@ -22,7 +22,7 @@ get_header();
             <div class="columns">
                 <div class="column">
                     <!-- Page Nav -->
-                    <?php include get_theme_file_path( 'blog-nav.php' ); ?>
+                    <?php include get_theme_file_path( 'inc/nav-blog.php' ); ?>
                     <!-- Main Content -->
                     <div class="columns">
                         <div class="column">

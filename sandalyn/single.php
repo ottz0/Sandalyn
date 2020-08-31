@@ -13,12 +13,14 @@ get_header();
     <main class="container">
         <!-- Main Page Wrapper -->
         <div class="columns">
-            <div class="column is-8 is-offset-2">
+            <div class="column">
+                <!-- Main Nav -->
+                <?php include get_theme_file_path( 'inc/nav-main.php' ); ?>
                 <!-- Page Nav -->
-                <?php include get_theme_file_path( 'blog-nav.php' ); ?>
+                <?php include get_theme_file_path( 'inc/nav-blog.php' ); ?>
                 <!-- Main Content -->
                 <div class="columns">
-                    <div class="column">
+                    <div class="column is-8 is-offset-2">
                         <?php
                             while ( have_posts() ) :
                                 the_post();

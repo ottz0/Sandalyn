@@ -15,6 +15,8 @@ get_header();
                 <!-- Main Page Wrapper -->
                 <div class="columns">
                     <div class="column">
+                        <!-- Main Nav -->
+                        <?php include get_theme_file_path( 'inc/nav-main.php' ); ?>
                         <!-- Main Content -->
                         <div class="columns">
                             <div class="column">
