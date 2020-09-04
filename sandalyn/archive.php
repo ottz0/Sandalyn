@@ -26,7 +26,7 @@ get_header();
                             <?php if ( have_posts() ) : ?>
                             <header class="page-header">
                                 <?php
-                                    the_archive_title( '<h1 class="title is-2 has-text-weight-medium">', '</h1>' );
+                                    the_archive_title( '<h1 class="title is-3 has-text-weight-medium">', '</h1>' );
                                     the_archive_description( '<div class="archive-description">', '</div>' );
                                 ?>
                             </header><!-- .page-header -->

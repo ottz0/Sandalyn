@@ -196,10 +196,14 @@ add_theme_support( 'disable-custom-font-sizes' );
 
 add_filter( 'excerpt_more', function() {
     return '...';
-} );
+});
 
 
 add_filter( 'excerpt_length', function($length) {
     return 15;
-} );
+});
 
+function sandalyn_features(){
+    register_nav_menu('mainSiteMenu', 'Main Site Menu');
+}
+add_action('after_setup_theme', 'sandalyn_features');
