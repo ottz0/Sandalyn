@@ -207,3 +207,4 @@ function sandalyn_features(){
     register_nav_menu('mainSiteMenu', 'Main Site Menu');
 }
 add_action('after_setup_theme', 'sandalyn_features');
+

@@ -40,6 +40,21 @@ get_header();
                         <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" />
                     </div>
                 </div>
+                <div class="columns">
+                    <div class="column">
+                        <?php
+                            $homepageEvents = new WP_Query(array(
+                                'posts_per_page' => 4,
+                                'post_type' => 'event'
+                            ));
+                            while($homepageEvents->have_posts()){
+                                $homepageEvents->the_post(); ?>
+                                <li><?php the_title(); ?></li>
+                            <?php }
+
+                        ?>
+                    </div>
+                </div>
                 <div class="columns pt-30">
                     <div class="column">   
                         <h2 class="title is-3 has-text-centered">Latest Articles</h2>                
