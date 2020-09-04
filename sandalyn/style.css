@@ -9463,7 +9463,7 @@ body {
 }
 
 .sand-top-strip {
-  max-height: 31px;
+  max-height: 40px;
   width: 100%;
   background-image: url("img/bg-flourish1.gif");
   /* The image used */
@@ -9554,7 +9554,7 @@ body {
     Main nav 
 */
 .sand-c-nav {
-  margin-top: -30px;
+  margin-top: -40px;
 }
 .sand-c-nav ul li {
   display: inline-block;
@@ -9572,6 +9572,37 @@ body {
 }
 .sand-c-nav ul li a:active {
   color: #000;
+}
+
+.sand-c-footer .sand-c-footer__section1 {
+  background-color: #F0F0F0;
+  padding: 25px 0;
+}
+.sand-c-footer .sand-c-footer__section2 {
+  background-color: #000;
+  background-image: url("img/bg-flourish2.gif");
+  /* The image used */
+  background-repeat: repeat;
+  height: 200px;
+}
+.sand-c-footer .sand-c-footer__section3 {
+  background-color: #000;
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 20px 0;
+}
+.sand-c-footer .sand-c-footer__section3 a {
+  color: #fff;
+  cursor: pointer;
+}
+.sand-c-footer .sand-c-footer__section3 a a:link {
+  color: #fff;
+}
+
+.has-image-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mt-0 {

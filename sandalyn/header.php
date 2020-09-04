@@ -26,7 +26,7 @@
 <div class="sand-c-hero">
     <div class="container">
         <!-- Main Page Wrapper -->
-        <div class="columns pt-30">
+        <div class="columns pt-20">
             <div class="column">
                 <!-- Mobile Nav -->
                 <nav class="level">
