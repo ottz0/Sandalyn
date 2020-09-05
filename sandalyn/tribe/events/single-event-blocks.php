@@ -24,31 +24,25 @@ if ( ! empty( $event_id ) && function_exists( 'tribe_is_recurring_event' ) ) {
 }
 ?>
 
-<section class="section mtn-30">
-    <main class="container">
-        <!-- Main Page Wrapper -->
+<!-- Main Page Wrapper -->
+<div class="columns">
+    <div class="column is-8 is-offset-2">
+        <!-- Main Content -->
         <div class="columns">
-            <div class="column is-8 is-offset-2">
-                <!-- Page Nav -->
-                <?php include get_theme_file_path( 'inc/nav-main.php' ); ?>
-                <!-- Main Content -->
-                <div class="columns">
-                    <div class="column">
-                        <div id="tribe-events-content" class="tribe-events-single tribe-blocks-editor">
-                            <?php $this->template( 'single-event/back-link' ); ?>
-                            <?php $this->template( 'single-event/notices' ); ?>
-                            <?php $this->template( 'single-event/title' ); ?>
-                            <?php if ( $is_recurring ) { ?>
-                                <?php $this->template( 'single-event/recurring-description' ); ?>
-                            <?php } ?>
-                            <?php $this->template( 'single-event/content' ); ?>
-                            <?php $this->template( 'single-event/comments' ); ?>
-                            <?php $this->template( 'single-event/footer' ); ?>
-                        </div>
-                    </div>
+            <div class="column">
+                <div id="tribe-events-content" class="tribe-events-single tribe-blocks-editor">
+                    <?php $this->template( 'single-event/back-link' ); ?>
+                    <?php $this->template( 'single-event/notices' ); ?>
+                    <?php $this->template( 'single-event/title' ); ?>
+                    <?php if ( $is_recurring ) { ?>
+                        <?php $this->template( 'single-event/recurring-description' ); ?>
+                    <?php } ?>
+                    <?php $this->template( 'single-event/content' ); ?>
+                    <?php $this->template( 'single-event/comments' ); ?>
+                    <?php $this->template( 'single-event/footer' ); ?>
                 </div>
             </div>
         </div>
-        <!-- /Main Page Wrapper -->
-    </main>
-</section>
+    </div>
+</div>
+<!-- /Main Page Wrapper -->

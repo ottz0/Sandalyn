@@ -1,3 +1,53 @@
-.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__body {
-    background-color: #f5f6ff;
+.tribe-common .tribe-common-l-container {
+    padding-left:0;
+    padding-right:0;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-l-container {
+    padding-left:0;
+    padding-right:0;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.tribe-common .tribe-common-c-btn, .tribe-common a.tribe-common-c-btn{
+    background-color:#730a5f;
+}
+
+.tribe-events .tribe-events-c-ical__link {
+    border:1px solid #730a5f;
+}
+
+.tribe-events .tribe-events-c-ical__link:active, .tribe-events .tribe-events-c-ical__link:focus, .tribe-events .tribe-events-c-ical__link:hover {
+    background-color:#730a5f;
+}
+
+.tribe-events .tribe-events-c-ical__link {
+    color:#730a5f;
+}
+
+.tribe-events .tribe-events-c-ical__link:before {
+    filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+}
+
+.tribe-block__events-link .tribe-block__btn--link a {
+    color:#730a5f;
+    font-weight:400;
+    padding:15px;
+}
+
+.tribe-block__events-link .tribe-block__btn--link a img{
+    filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+}
+
+.tribe-events-adv-list-widget .tribe-events-widget-link a, .tribe-events-back a, .tribe-events-list-widget .tribe-events-widget-link a, ul.tribe-events-sub-nav a{
+    font-weight:400;
+    font-size:18px;
+}
+
+.tribe-block__event-price{
+    padding:20px 0;
 }
