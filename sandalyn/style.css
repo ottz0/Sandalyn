@@ -9605,6 +9605,13 @@ body {
   align-items: center;
 }
 
+/* 
+    Hero slider
+*/
+.n2-ow .n2-bullet {
+  padding: 7px !important;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -11454,8 +11461,28 @@ ol.comment-list {
   color: #fff;
 }
 
-.n2-ow .n2-bullet {
-  padding: 7px !important;
+/*
+    Pagination
+*/
+.page-numbers {
+  display: inline-block;
+  padding: 15px 18px;
+  margin: 0 2px 0 0;
+  font-size: 1.125rem;
+  border: 1px solid #eee;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.page-numbers.current {
+  background: #000;
+  color: #fff;
+}
+
+a.page-numbers:hover {
+  border: 1px solid #000;
 }
 
 /*# sourceMappingURL=style.css.map */
