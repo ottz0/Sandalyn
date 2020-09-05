@@ -3,7 +3,7 @@
     <a href="<?php the_permalink(); ?>">
         <div class="sand-c-link-card__inner card-equal-height">
             <div class="sand-c-link-card__img">
-                <figure class="image is-4by3">
+                <figure class="image is-5by3">
                     <?php the_post_thumbnail('single-post-thumbnail'); ?>
                 </figure>
             </div>
