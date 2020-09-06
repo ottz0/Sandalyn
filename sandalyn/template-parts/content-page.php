@@ -11,11 +11,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<?php sandalyn_post_thumbnail(); ?>
-
+		<?php the_title( '<h1 class="title is-2 entry-title">', '</h1>' ); ?>
+    </header><!-- .entry-header -->
+    
+    <div class="pb-30">
+        <?php sandalyn_post_thumbnail(); ?>
+    </div>
 	<div class="entry-content">
 		<?php
 		the_content();

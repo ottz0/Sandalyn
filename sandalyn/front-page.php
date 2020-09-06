@@ -38,22 +38,7 @@ get_header();
                         </div>
                     </div>
                     <div class="column">
-                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" />
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <?php
-                            $homepageEvents = new WP_Query(array(
-                                'posts_per_page' => 4,
-                                'post_type' => 'event'
-                            ));
-                            while($homepageEvents->have_posts()){
-                                $homepageEvents->the_post(); ?>
-                                <li><?php the_title(); ?></li>
-                            <?php }
-
-                        ?>
+                        <img src="http://sandalyn.test/wp-content/uploads/2020/09/sandalyn-outside-1.jpg" alt="Sandalyn Estate - outside surrounds" />
                     </div>
                 </div>
                 <div class="columns pt-30">
