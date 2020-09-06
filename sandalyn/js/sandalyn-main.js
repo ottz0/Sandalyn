@@ -16,5 +16,13 @@
             //dropdown.removeClass('is-active');
             $(".dropdown").removeClass('is-active');
         });
-	});
+    });
+    // Swaps top image for weddings
+    $( document ).ready(function() {
+        if($('.page-id-177').length){
+            $('.sand-top-strip').addClass('sand-top-strip__bg--flowers');
+        }else{
+            $('.sand-top-strip').addClass('sand-top-strip__bg--flourish');
+        }
+    });
 })(jQuery, this);

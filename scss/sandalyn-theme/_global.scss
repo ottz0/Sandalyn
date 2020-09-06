@@ -19,9 +19,15 @@ body {
 }
 
 .sand-top-strip{
-    max-height:40px; 
+    height:40px; 
     width:100%; 
-    background-image: url("img/bg-flourish1.gif"); /* The image used */
+    &.sand-top-strip__bg--flourish{
+        background-image: url("img/bg-flourish1.gif"); 
+    }
+    &.sand-top-strip__bg--flowers{
+        background-image: url("img/bg-flowers.gif"); 
+    }
+    
 }
 .sand-c-content-breaker{
     &.sand-c-content-breaker--bg{
@@ -161,6 +167,11 @@ body {
         }
     }
 
+ }
+
+ .content figure{
+    margin-left:0;
+    margin-right:0;
  }
 
 .has-image-centered {

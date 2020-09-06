@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div class="sand-top-strip">&nbsp;</div>
 <div class="sand-c-hero">
@@ -40,14 +40,14 @@
                     </div>
                     <!-- Right side -->
                     <div class="level-right">
-                        <div class="level-item">
-                            <div class="buttons">
+                            <p class="control">
                                 <a href="https://apac.littlehotelier.com/properties/sandalynestatedirect" target="_blank" class="button is-black is-default">
-                                <span class="icon is-small mr-2">
-                                <i class="fas fa-calendar"></i>
-                                </span>
-                                RESERVATION</a>
-                            </div>
+                                    <span class="icon is-small">
+                                        <i class="fas fa-calendar"></i>
+                                    </span>
+                                    <span>Make a reservation</span>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </nav>

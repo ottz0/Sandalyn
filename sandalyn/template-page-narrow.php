@@ -1,11 +1,7 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * 
+ * Template Name:PageNarrow
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -17,13 +13,13 @@ get_header();
     <section class="section mtn-30">
         <main class="container">
             <!-- Main Page Wrapper -->
-            <div class="columns"> 
+            <div class="columns">
                 <div class="column">
                     <!-- Page Nav -->
                     <?php include get_theme_file_path( 'inc/nav-main.php' ); ?>
                     <!-- Main Content -->
                     <div class="columns">
-                        <div class="column">
+                        <div class="column is-8 is-offset-2">
                             <div class="content">
                                 <?php
                                 while ( have_posts() ) :
