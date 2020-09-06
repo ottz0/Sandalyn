@@ -24,7 +24,7 @@
                         </figure>
                     </div>
                     <div class="column is-12 has-text-centered">
-                        <nav class="sand-c-nav pt-30">
+                        <nav class="sand-c-nav pt-50">
                             <?php
                                 wp_nav_menu(array(
                                     'theme_loction' => 'mainSiteMenu'
@@ -36,15 +36,20 @@
             </div>
             <div class="column is-12 sand-c-footer__section2">
                 <div class="columns is-multiline is-centered">
-                    <div class="column is-12 has-text-centered">
-                        <h4>Subscribe to our Newsletter</h4>
+                    <div class="column is-12 has-text-centered mt-40">
+                        <h4 class="title is-4 has-text-white">Sandalyn Estate is the perfect base for your Hunter Valley getaway.</h4>
+                        <p class="control">
+                                <a href="https://apac.littlehotelier.com/properties/sandalynestatedirect" target="_blank" class="button is-black is-medium is-primary">
+                                    Make a reservation
+                                </a>
+                            </p>
                     </div>
                 </div>
             </div>
             <div class="column is-12 sand-c-footer__section3">
                 <div class="columns">
                     <div class="column has-text-centered">
-                        <p>&copy; <?php echo date("Y"); ?> Sandalyn Estate Accommodation, Weddings &amp; Events, Hunter Valley, NSW Australia. | <a href="#" target="_blank">Privacy Policy</a></p>
+                        <p>&copy; <?php echo date("Y"); ?> Sandalyn Estate Accommodation, Weddings &amp; Events, Hunter Valley, NSW Australia. | <a href="/privacy-policy">Privacy Policy</a></p>
                     </div>
                 </div>
             </div>

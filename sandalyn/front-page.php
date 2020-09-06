@@ -33,7 +33,8 @@ get_header();
                     <div class="column is-6">
                         <div class="content">
                                 <h1 class="title is-3">Hunter Valley Accommodation, Weddings and Events</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero volutpat. Arcu bibendum at varius vel pharetra vel turpis nunc. Neque viverra justo nec ultrices dui sapien eget mi. Sem et tortor consequat id porta nibh venenatis cras sed. Pharetra massa massa ultricies mi quis hendrerit dolor magna.</p>
+                                <p>Sandalyn Estate is located in the historic Lovedale area of the Hunter Valley, NSW. With its open wood fire and high ceilings, this space oozes charm and functionality. If you prefer an outdoor country wedding, there is ample space to set up a marquee anywhere on the 25 acre property.</p>
+                                <a href="/accommodation" class="button is-black">Our accommodation</a>
                         </div>
                     </div>
                     <div class="column">
