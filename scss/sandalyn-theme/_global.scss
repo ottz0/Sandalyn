@@ -48,11 +48,11 @@ body {
     Utilities
 */
 .sand-u-font__color--facebook{
-    color: #3b5998!important
+    color: #3b5998!important;
 }
 
 .sand-u-font__color--black{
-    color: #000!important
+    color: #000!important;
 }
 
 /* 
@@ -123,6 +123,13 @@ body {
             display: inline-block;
             padding-left:20px;
             font-size:18px;
+            &.active{
+                a{
+                    color:#730a5f !important;
+                    border-bottom:2px solid #730a5f;
+                    display: inline-block; 
+                }
+            }
             a{
                 &:link{
                     color:#000;
