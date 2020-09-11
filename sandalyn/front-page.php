@@ -38,7 +38,7 @@ get_header();
                         </div>
                     </div>
                     <div class="column">
-                        <img src="http://sandalyn.test/wp-content/uploads/2020/09/sandalyn-outside-1.jpg" alt="Sandalyn Estate - outside surrounds" />
+                        <img src="http://g6c.acb.myftpupload.com/wp-content/uploads/2020/09/sandalyn-outside-1-765x460-1.jpg" alt="Sandalyn Estate - outside surrounds" />
                     </div>
                 </div>
                 <div class="columns pt-30">
